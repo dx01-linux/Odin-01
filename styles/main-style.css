@@ -1,0 +1,15 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(223, 223, 218);
+    font-family: monospace;
+}
+
+#wrapper h1 , #wrapper  h2 {
+    padding: 0% 20% 0%;
+    color :rgb(129, 125, 125) ;
+    font-family: fantasy;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
