@@ -1,4 +1,4 @@
-body {
+body , * {
     margin: 0%;
     padding: 0%;
     color :rgb(122, 91, 3);
@@ -7,54 +7,72 @@ body {
 }
 
 nav {
+    padding: 0% 10% 0% 5%;
     border-bottom : 2px solid black ;
     ul {
+        margin-bottom: 2%;
+        margin-top: 2%;
         display: flex;
     }
-    ul > li {
+    ul > .navBtn {
         font-size: x-large;
-    list-style: none;
-    flex : 1 1 auto ;
+        list-style: none;
+        flex : 1 1 auto ;
     }
+    .navBtn a {
+        text-decoration: none;
+    }
+    #logo {
+        flex : 5 1 auto ;
+    }
+
 }
  
-#logo {
-    flex : 5 1 auto ;
-}
 .navBtn:hover {
+   a{
     text-decoration: underline ;
     color : rgb(253, 228, 3);
+   } 
 }
 
 #desc-section {
     display: inline flex;
     img {
         margin-top: 0.1%;
-        width: 300%;
+        width: 600%;
         border: 1px solid black;
     }
-    p {
+    p  {
         font-size: large;
         padding: 5% 2% ;
     }
+    p em {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
 }
-
+#desc-section:hover {
+   p , p > * {
+    color : rgb(253, 228, 3);
+   } 
+}
+ #desc-section + h1 {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 20%;
+   
+}
 #cards {
-    margin-top : 5% ;
     height: 80%;
     width: 99%;
+    margin-top : 2% ;
+    margin-bottom: 20%;
     display: inline flex;
     flex-flow: row wrap;
-    padding: 0% 2%;
-    gap: 2%;
-}
-
-.card:hover {
-    p , a { font-size: x-large; color:  rgb(255, 166, 1) ;} 
-    img {
-        width: 250px;
-        height: 300px;
-    }
+    padding: 0% 1%;
+    gap : 2% ;
 }
 .card{
     a {
@@ -69,8 +87,9 @@ nav {
     }
 }
 
-#l-btn ,  #r-btn {
-    color : rgba(146, 8, 8, 0.651) ;
-    font-size: xx-large ;
-
+.card:hover {
+    margin: 0% 1%  ;
+    transform: scaleY(1.2);
+    p , a { font-size: x-large; color:  rgb(255, 166, 1) ;} 
 }
+
