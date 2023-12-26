@@ -1,0 +1,94 @@
+body , * {
+    margin: 0%;
+    padding: 0%;
+    color :rgb(122, 91, 3);
+    font-family: monospace;
+    background-color: rgb(61, 60, 60);
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 0% 10% 0% 5%;
+    border-bottom : 2px solid black ;
+    ul {
+        margin-bottom: 2%;
+        margin-top: 2%;
+        display: flex;
+    }
+    ul > .navBtn {
+        font-size: 30px;
+        list-style: none;
+        flex : 1 1 auto ;
+    }
+    .navBtn a {
+        text-decoration: none;
+    }
+    #logo {
+        flex : 5 1 auto ;
+    }
+
+}
+ 
+.navBtn:hover {
+   a{
+    text-decoration: underline ;
+    color : rgb(253, 228, 3);
+   } 
+}
+#wrapper > h1 {
+    font-size: 50px;
+    margin: 5% 0% 2%;
+    text-align: center;
+}
+#info {
+    display: flex;
+    img {
+        width: 600px;
+        height: 400px;
+        flex : 6 1 auto ;
+        border : 2px black solid ;
+    }
+    p {
+        padding: 10% 10% 5%;
+        font-size: 20px;
+    }
+    p:hover {
+        color :rgb(253, 228, 3);
+    }
+}
+
+#making{
+    margin-top: 5%;
+    border-top: 2px black solid ;
+    display: flex;
+    flex-flow: row wrap;
+    
+    #ingredients {
+        margin-left: 40px;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        gap: 4%;
+        font-size: 20px;    
+    }
+   p {
+    display: inline;
+    width: 600px;
+    font-size: 13px;
+    border-right: 2px black solid ;
+   }
+    #stages {
+        display: flex;
+        flex-flow: flex wrap;
+        list-style: none;
+        gap : 10px;
+        img {
+            width: 100px;
+            height : 100px;
+        }
+    }
+    p:hover , #ingredients li:hover {
+        color :rgb(253, 228, 3);
+    } 
+    
+}
