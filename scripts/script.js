@@ -2,7 +2,6 @@ class htmlElement {
     constructor(tag){
         this.tag = document.createElement(tag)
         this.attr = this.tag.attributes ;  
-        this.events = [] 
     }
 }
 
@@ -34,26 +33,32 @@ class Text extends htmlElement {
     }
 }
 class Link  extends htmlElement {
-    constructor(ref , word){
+    constructor(ref , word = '#'){
         super('a')
 
         this.tag.setAttribute('href' , ref )
-        this.tag.appendChild(document.createTextNode(word))
+        
+        if(word != '#'){
+            this.tag.appendChild(document.createTextNode(word))
+        }
     }
 }
+
 class Card{
     constructor(){
         this.wrapper = new Wrapper('card');
         this.header = new Text('Pizza');
-        this.img = new Img('misc/pizza.webp' );
-        this.description = new Link('odin-recipes/pizza.html' , '!!!Get-Recipe');
+        this.iLink = new Link('odin-recipes/pizza.html')
+        this.description = new Link( 'odin-recipes/pizza.html', '!!!Get-Recipe');
         
-        //setting up :
+        //setting up 
         for(let x of Object.keys(this)){
                 if(x != 'wrapper'){
                     this.wrapper.tag.appendChild(this[x].tag);
                 }
         }
+        this.img = new Img('misc/pizza.webp' );
+        this.iLink.tag.appendChild(this.img.tag)
     }
 }
 
