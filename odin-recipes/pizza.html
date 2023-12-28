@@ -12,46 +12,79 @@
         <!-- Image and description -->
         <!-- H2 : Ingredients & list of them -->
         <!-- H2 : Process & P : process... -->
-        <div id="wrapper">
+        <div id="wrapper" class = 'flex-container-column'>
                 <nav>
-                    <ul>
+                    <ul class="flex-container-row">
                         <li id = 'logo' class = 'navBtn'><a href="../index.html"> Odin-Cook-inc</a></li>
                         <li class = 'navBtn'><a href="../index.html"> Home </a></li>
+                        <li class = 'navBtn'><a href="#info"> Description </a></li>
+                        <li class = 'navBtn'><a href="#making"> Recipe </a></li>
                     </ul>
                 </nav>
 
                 <h1> Pizza </h1>
-                <div id="info">
+                <div id="info" class = 'flex-container-row'>
                     <img src="../misc/pizza.webp" alt="pizza">
                     <p>The pizza is a delicius food.Description about Pizza-history. Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Alias eveniet accusantium fugit? 
+                        Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                        quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                        he pizza is a delicius food.Description about Pizza-history. Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. Alias eveniet accusantium fugit? 
                         Explicabo magnam earum nobis saepe commodi et id nesciunt, 
                         quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium. 
                     </p>
                 </div>
-                <div id="making">
+                <h1>Recipe</h1>
+                <div id="making" class="flex-container-row">
                     <!--Ingredients-->
-                        <p>Procedure : The first steep.....
-                            Explicabo magnam earum nobis saepe commodi et id nesciunt, 
-                            quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
-                            Explicabo magnam earum nobis saepe commodi et id nesciunt, 
-                            quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
-                            Explicabo magnam earum nobis saepe commodi et id nesciunt, 
-                            quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
-                        </p>
-                    <ul id = 'stages'>
+                
+                    <ul id = 'sect1' class="flex-container-column">
                         <li><img src="../misc/pizza-s1.webp" alt="pizz1"></li>
                         <li><img src="../misc/pizza-s2.webp" alt="pizz2"></li>
                         <li><img src="../misc/pizza-s3.webp" alt="pizz3"></li>
-                        <li><img src="../misc/pizza.webp" alt="pizza4"></li>
                     </ul>
-                    <ul id = 'ingredients'>
-                        <li>In#1</li>
-                        <li>In#2</li>
-                        <li>In#3</li>
-                        <li>In#4</li>
-                    </ul>
+                    <div id = 'sect2'>
+                        <div>
+                            <h3>Procedure :</h3>
+                            <p> 
+                                The first steep.....
+                                Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                                quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                                Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                                quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                                Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                                quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                                Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                                quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                                Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                                quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                                Explicabo magnam earum nobis saepe commodi et id nesciunt, 
+                                quaerat odit iure quibusdam nisi aliquid excepturi rem accusantium.
+                            </p>
+                        </div>
+                        <div class="flex-container-row">
+                            <img src="../misc/pizza.webp" alt="pizza4">
+                            <div>
+                                <ul>
+                                    <li>In#1</li>
+                                    <li>In#2</li>
+                                    <li>In#3</li>
+                                    <li>In#4</li>
+                                </ul>
+                            </div>
+                            <img id = 'cheff' src="../misc/cheff.jpeg" alt="cheff">
+                        </div>
+                    </div>
+
                 </div>
+        </div>
+        <div id = 'footer'>
+            <ul class="flex-container-row">
+                <li><p><em>Made by:</em> DxCode</p></li>
+                 <li><p><em>Phone:</em> (xxx)-xxx-xxxx</p></li>
+                 <li><p><em>Email:</em> dx@gmail.com </p></li>
+            </ul>
         </div>
 
 </body>

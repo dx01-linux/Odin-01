@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrapper" class = 'flex-container-column'>
         <nav>
-            <ul>
-                <li id='logo' class = 'navBtn'> <a href="index.html">Odin-Cook-Inc.</a></li>
-                <li class = 'navBtn'> <a href="#desc-section">Description </a></li>
-                <li class = 'navBtn'> <a href="#cards"> Recipes</a> </li>
+            <ul class="flex-container-row">
+                <li id='logo' class = 'navBtn flex-item'> <a href="index.html">Odin-Cook-Inc.</a></li>
+                <li class = 'navBtn flex-item''> <a href="#desc-section">Description </a></li>
+                <li class = 'navBtn flex-item''> <a href="#cards"> Recipes</a> </li>
             </ul>
         </nav>
-        <div id='desc-section'>
+        <div id='desc-section' class = 'flex-container-row'>
             <img src="misc/Logo.webp" alt="logo" />
                 <p>
                     <em>Odin-Cook-Inc. :</em>Lorem ipsum dolor sit, amet consectetur
@@ -37,16 +37,22 @@
         </div>
     
         <!-- Container for recipes' card -->
-            <h1>Recipes</h1>
-            <div id="cards">
-                <!-- <i id = 'l-btn' class = 'fas fa-angle-double-left'></i -->
-                <script src="scripts/script.js"></script>
-                <!-- <i id = 'r-btn' class = 'fas fa-angle-double-right'></i> -->
-            </div>
+        <h1 style="text-align: center; margin: 20px 0px;">Recipes</h1>
+        <div id="cards" class = 'flex-container-row'>
+             <!-- <i id = 'l-btn' class = 'fas fa-angle-double-left'></i -->
+            <script src="scripts/script.js"></script>
+             <!-- <i id = 'r-btn' class = 'fas fa-angle-double-right'></i> -->
+        </div>
             
         
     </div>
-    
+    <div id = 'footer'>
+        <ul class="flex-container-row">
+            <li><p><em>Made by:</em> DxCode</p></li>
+             <li><p><em>Phone:</em> (xxx)-xxx-xxxx</p></li>
+             <li><p><em>Email:</em> dx@gmail.com </p></li>
+        </ul>
+    </div>
 
 </body>
 
