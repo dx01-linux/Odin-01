@@ -33,7 +33,7 @@ nav {
     border-bottom: 2px solid black;
     .navBtn {
         list-style: none;
-        font-size: 25px;
+        font-size: 20px;
         flex: 2 3 auto;
 
         a {
@@ -106,11 +106,12 @@ h1 {
                 height: 200px ; 
             }
             #cheff {
-                flex : 2 ;
+                flex : 1;
+                height: 100px;
             }
             ul {
-                flex : 3 ;
-                font-size: 20px;
+                flex : 1;
+                font-size: 12px;
                 list-style: none;
                 li:hover {
                     color :chocolate ;
