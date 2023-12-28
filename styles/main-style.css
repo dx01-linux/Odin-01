@@ -37,7 +37,7 @@ nav {
     .navBtn {
         list-style: none;
         font-size: 25px;
-        flex: 1 1 auto;
+        flex: 2 3 auto;
 
         a {
             text-decoration: none;
@@ -50,7 +50,7 @@ nav {
     }
 
     #logo {
-        flex: 1 50%;
+        flex: 6 2 auto ;
     }
 }
 
@@ -114,12 +114,11 @@ h1 {
     padding: 0% 2% 0% 60%;
     
     li{
-        flex : 1;
+        flex : auto;
         list-style: none;
         p {
             font-size: 14px;
             color : rgb(168, 11, 168) ;
-            flex : 1;
             em{
                 color :crimson;
             } 

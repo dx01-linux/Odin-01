@@ -31,25 +31,23 @@ img {
 
 nav {
     border-bottom: 2px solid black;
-    color: crimson;
     .navBtn {
         list-style: none;
-        font-size: 30px;
-        margin: 10px 0px 0px;
-        flex: 1 1 auto;
+        font-size: 25px;
+        flex: 2 3 auto;
 
         a {
             text-decoration: none;
         }
 
         a:hover {
-            color :chocolate ;
+            color:crimson;
             text-decoration: underline;
         }
     }
 
     #logo {
-        flex: 1 40%;
+        flex: 6 2 auto ;
     }
 }
 
@@ -60,6 +58,7 @@ h1 {
 }
 
 #info {
+    border-bottom: 1px solid black;
     padding: 0px 5px;
     column-gap: 5px;
 
@@ -130,12 +129,11 @@ h1 {
     padding: 0% 2% 0% 60%;
     
     li{
-        flex : 1;
+        flex : auto;
         list-style: none;
         p {
             font-size: 14px;
             color : rgb(168, 11, 168) ;
-            flex : 1;
             em{
                 color :crimson;
             } 
