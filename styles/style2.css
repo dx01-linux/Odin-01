@@ -1,94 +1,145 @@
-body , * {
+
+body,
+* {
+    font-family: monospace;
+    color : rgb(131, 70, 27);
+    background-color: rgb(61, 60, 60);
     margin: 0%;
     padding: 0%;
-    color :rgb(122, 91, 3);
-    font-family: monospace;
-    background-color: rgb(61, 60, 60);
     box-sizing: border-box;
 }
 
-nav {
-    padding: 0% 10% 0% 5%;
-    border-bottom : 2px solid black ;
-    ul {
-        margin-bottom: 2%;
-        margin-top: 2%;
-        display: flex;
-    }
-    ul > .navBtn {
-        font-size: 30px;
-        list-style: none;
-        flex : 1 1 auto ;
-    }
-    .navBtn a {
-        text-decoration: none;
-    }
-    #logo {
-        flex : 5 1 auto ;
-    }
-
-}
- 
-.navBtn:hover {
-   a{
-    text-decoration: underline ;
-    color : rgb(253, 228, 3);
-   } 
-}
-#wrapper > h1 {
-    font-size: 50px;
-    margin: 5% 0% 2%;
-    text-align: center;
-}
-#info {
-    display: flex;
-    img {
-        width: 600px;
-        height: 400px;
-        flex : 6 1 auto ;
-        border : 2px black solid ;
-    }
-    p {
-        padding: 10% 10% 5%;
-        font-size: 20px;
-    }
-    p:hover {
-        color :rgb(253, 228, 3);
-    }
+img {
+    border: 1px solid black;
 }
 
-#making{
-    margin-top: 5%;
-    border-top: 2px black solid ;
+.flex-container-row {
     display: flex;
     flex-flow: row wrap;
-    
-    #ingredients {
-        margin-left: 40px;
-        list-style: none;
-        display: flex;
-        flex-flow: column;
-        gap: 4%;
-        font-size: 20px;    
+    > *{
+        flex : 1 ;
     }
-   p {
-    display: inline;
-    width: 600px;
-    font-size: 13px;
-    border-right: 2px black solid ;
-   }
-    #stages {
-        display: flex;
-        flex-flow: flex wrap;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-flow: column wrap;
+    > *{
+        flex : 1 ;
+    }
+}
+
+nav {
+    border-bottom: 2px solid black;
+    color: crimson;
+    .navBtn {
         list-style: none;
-        gap : 10px;
-        img {
-            width: 100px;
-            height : 100px;
+        font-size: 30px;
+        margin: 10px 0px 0px;
+        flex: 1 1 auto;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color :chocolate ;
+            text-decoration: underline;
         }
     }
-    p:hover , #ingredients li:hover {
-        color :rgb(253, 228, 3);
-    } 
+
+    #logo {
+        flex: 1 40%;
+    }
+}
+
+h1 {
+    margin: 20px 0px;
+    text-align: center;
+    color: crimson;
+}
+
+#info {
+    padding: 0px 5px;
+    column-gap: 5px;
+
+    p{
+        font-size: 15px;
+        padding: 50px 10px 0px ;
+    }
+    p:hover {
+        color : chocolate ;
+    }
+}
+
+#making {
+   #sect1{
+    margin-right: 20px;
+        flex : 0;
+        li {
+            width: 100px;
+            height: 100px;
+            display: contents;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
     
+    #sect2 {
+        flex: 7;
+        div {
+            margin-bottom: 5px;
+            h3 {
+                font-size: 18px;
+            }
+            p:hover , h3:hover{
+                color : chocolate ;
+            }
+        }
+        div + div {
+            img , ul {
+                margin-right: 10px;
+            }
+            img {
+                flex : 5 ;
+                height: 200px ; 
+            }
+            #cheff {
+                flex : 2 ;
+            }
+            ul {
+                flex : 3 ;
+                font-size: 20px;
+                list-style: none;
+                li:hover {
+                    color :chocolate ;
+                }
+            }
+            
+            
+        }
+
+    }
+
+}
+
+#footer {
+    margin-top: 40px;
+    padding: 0% 2% 0% 60%;
+    
+    li{
+        flex : 1;
+        list-style: none;
+        p {
+            font-size: 14px;
+            color : rgb(168, 11, 168) ;
+            flex : 1;
+            em{
+                color :crimson;
+            } 
+        }
+        
+    }
 }
